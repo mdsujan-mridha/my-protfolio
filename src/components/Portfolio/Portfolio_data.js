@@ -1,0 +1,51 @@
+const Portfolio_data = [
+  {
+    id: 1,
+    category: "DEVELOPMENT",
+    totalLike: "600",
+    title: "The services provide for design ",
+    image: "https://i.ibb.co/KxbswL4/Screenshot-from-2022-06-03-03-45-12.png",
+    Link : "https://euphonious-cuchufli-093185.netlify.app/",
+  },
+  {
+    id: 2,
+    category: "APPLICATION",
+    totalLike: "750",
+    title: "Mobile app landing design & maintain",
+    image: "https://i.ibb.co/s1F59QX/Screenshot-from-2022-06-03-03-43-16.png",
+    Link : "https://euphonious-cuchufli-093185.netlify.app/",
+  },
+  {
+    id: 3,
+    category: "PHOTOSHOP",
+    totalLike: "630",
+    title: "Logo design creativity & Application ",
+    image: "https://i.ibb.co/4YDFPP9/Screenshot-from-2022-06-03-03-41-53.png",
+    Link : "https://euphonious-cuchufli-093185.netlify.app/",
+  },
+  {
+    id: 4,
+    category: "FIGMA",
+    totalLike: "360",
+    title: "Mobile app landing design & Services",
+    image: "https://i.ibb.co/gD4cXX5/Screenshot-from-2022-06-03-14-17-07.png",
+    Link : "https://euphonious-cuchufli-093185.netlify.app/",
+  },
+  {
+    id: 5,
+    category: "WEB DESIGN",
+    totalLike: "280",
+    title: "Design for tecnology & services",
+    image: "https://i.ibb.co/2qFGNR4/Screenshot-from-2022-06-03-03-44-22.png",
+    Link : "https://euphonious-cuchufli-093185.netlify.app/",
+  },
+  {
+    id: 6,
+    category: "WEB DESIGN",
+    totalLike: "690",
+    title: "App for tecnology & services",
+    image: "https://i.ibb.co/JrvsXTr/Screenshot-from-2022-06-03-03-40-16.png",
+    Link : "https://euphonious-cuchufli-093185.netlify.app/",
+  },
+]
+export default Portfolio_data
