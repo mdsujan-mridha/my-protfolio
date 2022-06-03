@@ -48,11 +48,11 @@ const Contact = () => {
                   <img src={contact1} alt='' />
                 </div>
                 <div className='details'>
-                  <h1>Nevine Acotanza</h1>
-                  <p>Chief Operating Officer</p>
+                  <h1> Md.Sujan </h1>
+                  <h3> Web Developer </h3>
                   <p>I am available for freelance work. Connect with me via and call in to my account.</p> <br />
-                  <p>Phone: +01234567890</p>
-                  <p>Email: admin@example.com</p> <br />
+                  <p>Phone: +8801615951638</p>
+                  <p>Email: md.sujan0105@gmail.com</p> <br />
                   <span>FIND WITH ME</span>
                   <div className='button f_flex'>
                     <button className='btn_shadow'>

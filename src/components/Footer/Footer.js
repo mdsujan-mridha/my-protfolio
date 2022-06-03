@@ -7,7 +7,8 @@ const Footer = () => {
       <footer>
         <div className='conatiner text-center top'>
           <div className='img'>
-            {/* must include one logo image here */}
+            <img className="header-logo" src="https://i.ibb.co/yS5Shcx/channels4-profile.jpg" alt=""/>
+          
           </div>
           <p>© 2022. All rights reserved by Md.Suj@n.</p>
         </div>
