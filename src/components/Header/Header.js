@@ -17,7 +17,7 @@ const Header = () => {
             <header className='header'>
         <div className='container d_flex'>
           <div className='logo'>
-            <img src={logo} alt='' />
+            <img className='header-logo' src="https://i.ibb.co/yS5Shcx/channels4-profile.jpg" alt='' />
           </div>
 
           <div className='navlink'>
