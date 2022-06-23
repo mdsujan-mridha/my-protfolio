@@ -1,65 +1,69 @@
-import React, { useState } from 'react';
-import './Header.css';
-import logo from '../pic/logo.png';
+import React, { useEffect, useRef } from "react";
+import { Container } from "reactstrap";
+import { RiMenu5Fill } from "react-icons/ri"
+import './Header.css'
 
-
+const navLinks = [
+  {
+    display: "Home",
+    url: "#home",
+  },
+  {
+    display: "About",
+    url: "#about",
+  },
+  {
+    display: "Services",
+    url: "#services",
+  },
+  {
+    display: "Protfolio",
+    url: "#protfolio",
+  },
+  {
+    display: "Contac",
+    url: "#contact",
+  },
+  {
+    display: "Blog",
+    url: "#blog",
+  },
+];
 const Header = () => {
-    // fixed Header
-  window.addEventListener("scroll", function () {
-    const header = document.querySelector(".header")
-    header.classList.toggle("active", window.scrollY > 100)
-  })
-  // Toogle Menu
-  const [Mobile, setMobile] = useState(false)
-    return (
-        <>
-            
-            <header className='header'>
-        <div className='container d_flex'>
-          <div className='logo'>
-            <img className='header-logo' src="https://i.ibb.co/yS5Shcx/channels4-profile.jpg" alt='' />
-          </div>
+ const headerRef = useRef(null);
+ useEffect( ()=>{
+   window.addEventListener('scroll',()=>{
+      if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
+        headerRef.current.classList.add('header-shrink')
+      } else{
+        window.removeEventListener('scroll')
+      }
 
-          <div className='navlink'>
-            <ul className={Mobile ? "nav-links-mobile" : "link f_flex uppercase"} onClick={() => setMobile(false)}>
-              {/*<ul className='link f_flex uppercase {Mobile ? "nav-links-mobile" : "nav-links"} onClick={() => setMobile(false)}'>*/}
-              <li>
-                <a href='#home'>home</a>
+   })
+ } ,[])
+  return (
+    <header className="header" ref={headerRef}>
+      <Container>
+        <div className="navigation d-flex align-items-center justify-content-between">
+        <div className="logo"> <h5> SUJAN </h5></div>
+        <div className="nav-menu">
+          <ul className="nav-list">
+            {navLinks.map((item, index) => (
+              <li className="nav-item" key={index}>
+                <a href={item.url}>{item.display}</a>
               </li>
-              <li>
-                <a href='#features'>features</a>
-              </li>
-              <li>
-                <a href='#portfolio'>portfolio</a>
-              </li>
-              <li>
-                <a href='#resume'>resume</a>
-              </li>
-              <li>
-                <a href='#clients'>clients</a>
-              </li>
-              <li>
-                <a href='#blog'>blog</a>
-              </li>
-              <li>
-                <a href='#contact'>contact</a>
-              </li>
-              <li>
-                <button className='home-btn'>BUY NOW</button>
-              </li>
-            </ul>
-
-            <button className='toggle' onClick={() => setMobile(!Mobile)}>
-              {Mobile ? <i className='fas fa-times close home-btn'></i> : <i className='fas fa-bars open'></i>}
-            </button>
-          </div>
+            ))}
+          </ul>
         </div>
-      </header>
-
-
-
-        </>
-    );
+        <div className="nav-right d-flex align-items-center gap-4">
+            <button className="btn">let's Talk </button>
+            <span className="mobile-menu"> <i> < RiMenu5Fill/> </i> </span>
+        </div>
+        </div>
+        
+      </Container>
+    </header>
+  );
 };
 
 export default Header;

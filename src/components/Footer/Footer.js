@@ -1,20 +1,15 @@
-import React from "react"
 
-
+import React from 'react';
+import { Container } from "reactstrap"
+import './Footer.css';
 const Footer = () => {
-  return (
-    <>
-      <footer>
-        <div className='conatiner text-center top'>
-          <div className='img'>
-            <img className="header-logo" src="https://i.ibb.co/yS5Shcx/channels4-profile.jpg" alt=""/>
-          
-          </div>
-          <p>© 2022. All rights reserved by Md.Suj@n.</p>
-        </div>
-      </footer>
-    </>
-  )
-}
+    return (  <footer className='pb-5'>
+              <Container className='text-center footer'>
+                  <p> Copyright 2022, Developed by Md.Suj<span>@</span>n All right reserved </p>
+              </Container>
+             </footer>
+        
+    );
+};
 
-export default Footer
+export default Footer;

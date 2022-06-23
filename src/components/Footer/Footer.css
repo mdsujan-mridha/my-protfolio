@@ -1,0 +1,14 @@
+.footer{
+    border-top: 1px solid #4235a89b;
+    padding-top: 20px;
+    margin-top: 150px;
+
+}
+.footer p{
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+.footer p span{
+    color: #7865ff;
+}

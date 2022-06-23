@@ -1,0 +1,34 @@
+.skil-wrapper{
+   width: 100%;
+   height: auto;
+   background: #132347;
+   border: 1px solid #17306f; 
+   border-radius: 5px;
+}
+
+.skill-section-area{
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.html-icon{
+    display: flex;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    transition: 0.3s;
+}
+.html-icon:hover{
+    background: #fff;
+    border-radius: 5px;
+}
+.html-icon img{
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
